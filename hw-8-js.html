@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<script>
+
+    // - Створити функцію конструктор для об'єктів User з полями id, name, surname , email, phone створити пустий масив, наповнити його 10 об'єктами new User(....)
+
+    // function User (id,name,surname,email,phone){
+    //     this.id = id;
+    //     this.name = name;
+    //     this.surname = surname;
+    //     this.email = email;
+    //     this.phone = phone;
+    // }
+    //
+    // let user1 = new User(1,'abrikos','abrikosovich','abrikostop@gmail.com','0963297451')
+    // console.log(user1)
+    //
+    //
+    // let users = [
+    //     {id:1, name: 'vasya', age: 31, status: false},
+    //     {id:2, name: 'petya', age: 30, status: true},
+    //     {id:3, name: 'kolya', age: 29, status: true},
+    //     {id:4, name: 'olya', age: 28, status: false},
+    //     {id:5, name: 'max', age: 30, status: true},
+    //     {id:6, name: 'anya', age: 31, status: false},
+    //     {id:7, name: 'oleg', age: 28, status: false},
+    //     {id:8, name: 'andrey', age: 29, status: true},
+    //     {id:9, name: 'masha', age: 30, status: true},
+    //     {id:10, name: 'olya', age: 31, status: false},
+    //     {id:11, name: 'max', age: 31, status: true}
+    // ];
+
+    // - Взяти масив з  User[] з попереднього завдання, та відфільтрувати , залишивши тільки об'єкти з парними id (filter)
+
+    // let idk = users.slice().filter(kratne => kratne.id % 2 === 0)
+    // console.log(idk)
+
+    // - Взяти масив з  User[] з попереднього завдання, та відсортувати його по id. по зростанню (sort)
+
+    // let idk2 = users.slice().sort((a,b) => a.id - b.id) // po zrostanyu
+    // console.log(idk2)
+    // let idk3 = users.slice().sort((a,b) => b.id - a.id) // po spadanyu
+    // console.log(idk3)
+
+
+    // - створити класс для об'єктів Client з полями id, name, surname , email, phone, order (поле є масивом зі списком товарів) створити пустий масив, наповнити його 10 об'єктами Client
+
+    // class Client {
+    //     constructor(id, name, surname , email, phone, order) {
+    //         this.id = id;
+    //         this.name = name;
+    //         this.surname = surname;
+    //         this.email = email;
+    //         this.phone = phone;
+    //         this.order = order;
+    //     }
+    // }
+    //
+    // const clients = [];
+    //
+    // clients.push(new Client(1, "John", "Doe", "john@example.com", "+1234567890", ["Product A", "Product B"]));
+    // clients.push(new Client(2, "Jane", "Smith", "jane@example.com", "+9876543210", ["Product C"]));
+    // clients.push(new Client(3, "Bob", "Johnson", "bob@example.com", "+5555555555", ["Product D", "Product E", "Product F"]));
+    // clients.push(new Client(4, "Alice", "Williams", "alice@example.com", "+1111111111", []));
+    // clients.push(new Client(5, "Tom", "Davis", "tom@example.com", "+2222222222", ["Product G", "Product H"]));
+    // clients.push(new Client(6, "Sarah", "Miller", "sarah@example.com", "+3333333333", ["Product I", "Product J"]));
+    // clients.push(new Client(7, "Mike", "Wilson", "mike@example.com", "+4444444444", ["Product K", "Product L", "Product M"]));
+    // clients.push(new Client(8, "Emily", "Anderson", "emily@example.com", "+6666666666", ["Product N"]));
+    // clients.push(new Client(9, "David", "Taylor", "david@example.com", "+7777777777", ["Product O", "Product P", "Product Q", "Product R"]));
+    // clients.push(new Client(10, "Jessica", "Thomas", "jessica@example.com", "+8888888888", []));
+    //
+    // let sortOrder = clients.sort((a,b) => a.order.length - b.order.length);
+    // console.log(sortOrder)
+
+
+// - Створити функцію конструктор яка дозволяє створювати об'єкти car, з властивостями модель, виробник, рік випуску, максимальна швидкість, об'єм двигуна. додати в об'єкт функції:
+
+    // function Car (model,manufacturer, year, maxSpeed, engineVolume){
+    //     this.model = model;
+    //     this.manufactur = manufacturer;
+    //     this.year = year;
+    //     this.maxSpeed = maxSpeed;
+    //     this.engineVolume = engineVolume;
+    //     this.drive = function (){
+    //         console.log(`їдемо зі швидкістю ${this.maxSpeed} на годин`)
+    //     }
+    //
+    //     this.info = function (){
+    //         console.log(`moder - Модель представленої машини ${this.model}`,`, manufacturer - Виробник машини: ${this.manufactur}`,`, year - Рік виробництва: ${this.year}`,`, maxSpeed - Максимальна швидкість машини: ${this.maxSpeed}`,`, engineVolume - Обєм двигуна: ${this.engineVolume}`);
+    //     }
+    //
+    //     this.increaseMaxSpeed = function (newSpeed){
+    //         this.maxSpeed += newSpeed;
+    //         console.log(`Максимальна швидкість машини збільшилась : ${this.maxSpeed}`)
+    //     }
+    //
+    //     this.changeYear = function (newValue){
+    //         this.year = newValue;
+    //         console.log(`Рік випуску машини змінено на : ${this.year}`)
+    //     }
+    // }
+    //
+    // let myCar = new Car ("Civic", "Honda", 2022, 200, 1.5);
+    // console.log(myCar)
+    // myCar.drive()
+    // myCar.info()
+    //
+    // myCar.increaseMaxSpeed(24)
+    // console.log(myCar.maxSpeed)
+    //
+    // myCar.changeYear(2024)
+    // console.log(myCar.year)
+    //
+    // class addDriver extends Car{
+    //     constructor(model,manufacturer, year, maxSpeed, engineVolume,name,age,status) {
+    //         super(model,manufacturer, year, maxSpeed, engineVolume);
+    //         this.name = name;
+    //         this.age = age;
+    //         this.status = status;
+    //     }
+    // }
+    // let drivers = new addDriver("Civic", "Honda", 2022, 200, 1.5,'kokos',34,'male')
+    // console.log(drivers)
+
+// - (Те саме, тільки через клас)
+
+    // class Car2 {
+    //     constructor(model,manufacturer, year, maxSpeed, engineVolume) {
+    //         this.model = model;
+    //         this.manufactur = manufacturer;
+    //         this.year = year;
+    //         this.maxSpeed = maxSpeed;
+    //         this.engineVolume = engineVolume;
+    //
+    //         this.drive = function (){
+    //             console.log(`їдемо зі швидкістю ${this.maxSpeed} на годин`)
+    //         }
+    //
+    //         this.info = function (){
+    //             console.log(`moder - Модель представленої машини ${this.model}`,`, manufacturer - Виробник машини: ${this.manufactur}`,`, year - Рік виробництва: ${this.year}`,`, maxSpeed - Максимальна швидкість машини: ${this.maxSpeed}`,`, engineVolume - Обєм двигуна: ${this.engineVolume}`);
+    //         }
+    //
+    //         this.increaseMaxSpeed = function (newSpeed){
+    //             this.maxSpeed += newSpeed;
+    //             console.log(`Максимальна швидкість машини збільшилась : ${this.maxSpeed}`)
+    //         }
+    //
+    //         this.changeYear = function (newValue){
+    //             this.year = newValue;
+    //             console.log(`Рік випуску машини змінено на : ${this.year}`)
+    //         }
+    //     }
+    // }
+    //
+    // let myCar2 = new Car2('Corvette (C6)','Chevrolet',2004 ,300 , 6.162)
+    // console.log(myCar2)
+    // myCar2.drive()
+    // myCar2.info()
+    //
+    // myCar2.increaseMaxSpeed(52)
+    // console.log(myCar2.maxSpeed)
+    //
+    // myCar2.changeYear(2005)
+    // console.log(myCar2.year)
+    //
+    //
+    // class addDriver2 extends Car2{
+    //     constructor(model,manufacturer, year, maxSpeed, engineVolume,name,age,status) {
+    //         super(model,manufacturer, year, maxSpeed, engineVolume);
+    //         this.name = name;
+    //         this.age = age;
+    //         this.status = status;
+    //     }
+    // }
+    //
+    // let driver2 = new addDriver2('Corvette (C6)','Chevrolet',2004 ,300 , 6.162, 'abrikos', 28, 'female')
+    // console.log(driver2)
+
+
+
+
+
+
+    
+// ПРИНЦ І ПОПЕЛЮШКА
+
+    class Popelyushka {
+        constructor(name,footSize) {
+            this.name = name;
+            this.foorSize = footSize;
+        }
+    }
+
+    let Popelyushkus = [
+        new Popelyushka("Аня", 36),
+        new Popelyushka("Віка", 38),
+        new Popelyushka("Галя", 35),
+        new Popelyushka("Даша", 37),
+        new Popelyushka("Єва", 36),
+        new Popelyushka("Женя", 39),
+        new Popelyushka("Зоя", 37),
+        new Popelyushka("Іра", 38),
+        new Popelyushka("Катя", 36),
+        new Popelyushka("Ліза", 34)
+    ];
+
+    class Prince {
+        constructor(name,foundFootSize) {
+            this.name = name;
+            this.foundFootSize = foundFootSize;
+        }
+    }
+
+    let prince = new Prince('Leopold' , 34)
+
+    let foundPopelyushka;
+
+    for (let i = 0; i < Popelyushkus.length; i++) {
+        if (Popelyushkus[i].foorSize === prince.foundFootSize){
+            foundPopelyushka = Popelyushkus[i];
+            break;
+        }
+    }
+
+    if (foundPopelyushka){
+        console.log(`Принц ${prince.name} знайшов свою Попелюшку - ${foundPopelyushka.name}.`)
+    }else{
+        console.log(`Принц ${prince.name} не знайшов свою Попелюшку`)
+    }
+
+</script>
+</body>
+</html>
